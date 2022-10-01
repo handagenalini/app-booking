@@ -1,0 +1,27 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+
+<body>
+   <%- include('includes/navigation.ejs') %>
+
+    <main>
+        <form class="product-form" action="/admin/add-product" method="POST">
+            <div class="form-control">
+                <!-- <label for="title">Title</label>
+                <input type="text" name="title" id="title"> -->
+                <label for="username"> Name</label>
+                    <input type="text" name="username" id="username" required/>
+                    <label for="emailid"> EmailId</label>
+                    <input type="emailId" name="emailid" id="emailid"  required/>
+                    <label for="phonenumber"> Phone Number</label>
+                    <input type="tel"name="phonenumber" id="phonenumber" >                   
+          
+
+            </div>
+
+            <button class="btn" type="submit">submit</button>
+        </form>
+    </main>
+<%- include('includes/end.ejs') %>
